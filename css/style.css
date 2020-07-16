@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@200;300;400&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700;800;900&display=swap');
+
+:root {
+  --color-white: #ffffff;
+
+  --color-primary: #3a407c;
+  --color-primary-light: #d8d9e5;
+  --color-primary-dark: #ba265d;
+  --color-secondary: #fcb500;
+  --color-alert: #f13e3e;
+
+  --font-family: Overpass, san-serif: 
+  --font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body { 
+}
+
+/* 
+Navbar  
+______
+*/
+.navbar {
+ margin-top: 4em;
+ margin-bottom: 4em;
+}
+.nav-brand img { 
+  height: 5rem;
+  margin-left: 9.8em;
+}
+
+.header { 
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 9.8em;
+  height: auto;
+}
+
+.header-text { 
+  margin-top: 3em;
+}
+.header-text h1 { 
+  font-size: 6.7em;
+  font-family: Poppins, sans-serif;
+  font-weight: 300;
+}
+
+.header h1 span  { 
+  color: var(--color-alert)
+}
+
+.header-text p { 
+  font-size: 2.1em;
+  font-family: Overpass, sans-serif;
+  font-weight: 300;
+  margin-top: .8em;
+}
+
+.header-text p span { 
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.header img { 
+  margin-top: -5em;
+  height: 90em;
+}
+
+.header form { 
+  position: absolute;
+  position: relative;
+}
+
+.header form input {
+  margin-top: 1.6em;
+  height: 4em;
+  width: 80%;
+  color: var(--color-primary);
+  border: 1.5px solid var(--color-primary);
+  border-radius: 5em;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: none;
+  background-color: transparent;
+}
+
+.header form input::placeholder {
+  font-size: 1.6em;
+  color: var(--color-primary-light);
+  padding: 0;
+  padding-left: 0.8em;
+  font-family: Overpass, san-serif;
+  font-weight: 300
+}
+
+.header form button {
+  position: absolute;
+  margin-top: 1.6em;
+  padding-right: 0.6em;
+  height: 4em;
+  background-color: var(--color-white);
+  border: 1.5px solid var(--color-primary);
+  border-top-right-radius: 5em;
+  border-bottom-right-radius: 5em;
+  border-left: none;
+  /* border: 1px solid red; */
+}
+
+.header form button:link,
+.header form button:hover,
+.header form button:focus,
+.header form button:active {
+  outline: none;
+  border: none;
+}
+
+.header form button svg {
+  fill: var(--color-white);
+  height: 2.4em;
+  width: 2.4em;
+  padding: 0;
+}
+/* 
+------------------------------------------------------------------------
+*/
+
+/*  
+About
+-----
+*/
+.about { 
+  margin-top: 9.8em;
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+  padding-left: 9.8em;
+  padding-right: 9.8em;
+}
+
+
+.about-image {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 72em;
+  padding-left: 9.8em;
+}
+
+.about-bg{
+  position: absolute;
+  left: -9.8em;
+  height: 72em;
+  width: 60em;
+  background-color:  var(--color-primary-light);
+}
+
+.about-image img{
+  position: absolute;
+  height : 50em;
+  width: 50em;
+}
+
+.about-text {
+  right: 0;
+  margin-right: 9.8em;
+}
+
+.about-text h2 { 
+  font-size: 3.7em;
+  font-weight: 600;
+  font-family: Poppins, sans-serif;
+  color: var(--color-primary);
+  margin-bottom: .4em;
+}
+.about-text p { 
+  margin-top: .4em;
+  margin-bottom: .4em;
+  font-size: 2.1em;
+  font-weight: 300;
+  font-family: Overpass, sans-serif;
+  width: 20em;
+}
+
+.about a {
+  margin-top: .4em;
+}
+
+.about a svg {
+  height: 5em;
+  width: 5em;
+}
+/* 
+------------------------------------------------------------------------
+*/
+
+/*  
+About
+-----
+*/
+.about-2 { 
+  margin-top: 9.8em;
+  margin-bottom: 9.8em;
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+  padding-left: 9.8em;
+  padding-right: 9.8em;
+}
+
+
+.about-2-image {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 72em;
+  width: 100%;
+  padding-left: 18.6em;
+}
+
+.about-2-bg{
+  position: absolute;
+  background-color: var(--color-primary-light);
+  height: 72em;
+  width: 60em;
+  right: -9.8em;
+}
+
+.about-2-image img{
+  position: absolute;
+  height: 50em;
+  width: 50em;
+}
+
+.about-2-text {
+  right: 0;
+  margin-left: 9.8em;
+}
+
+.about-2-text h2 { 
+  font-size: 3.7em;
+  font-weight: 600;
+  font-family: Poppins, sans-serif;
+  color: var(--color-primary);
+  margin-bottom: .4em;
+}
+.about-2-text p { 
+  margin-top: .4em;
+  margin-bottom: .4em;
+  font-size: 2.1em;
+  font-weight: 300;
+  font-family: Overpass, sans-serif;
+  width: 20em;
+}
+
+.about-2 a {
+  margin-top: .4em;
+}
+
+.about-2 a svg {
+  height: 5em;
+  width: 5em;
+}
+/* 
+------------------------------------------------------------------------
+*/
+
+/*  
+Carousel 
+--------
+*/
+.container {
+  display: flex;
+  justify-content: center;
+  padding-right: 9.8em;
+  padding-left: 9.8em;
+  background-color: var(--color-primary);
+  position: relative;
+  width: 100%;
+  height: 100em;
+  overflow-y: hidden;
+}
+
+.bg-image {
+  position: absolute;
+  top: 0;
+  /* z-index: -1; */
+}
+
+.carousel {
+  position: absolute;
+  width: 100em;
+  height: 64.5em;
+  margin-top: 9.8em;
+  margin-bottom: 9.8em;
+  z-index: 5;
+}
+
+.carousel-item { 
+  height: 64.5em;
+}
+
+.carousel-text { 
+  width: 100%;
+  margin-bottom: 4.8em;
+  text-align: center;
+}
+
+.carousel-text h2 { 
+  font-size: 3.7em;
+  font-family: Overpass, sans-serif;
+  font-weight: 300;
+  margin: 0 auto;
+  color: var(--color-white);
+}
+
+.carousel-text p { 
+  font-size: 2.1em;
+  font-family: Overpass, sans-serif;
+  font-weight: 200;
+  width: 60%;
+  color: var(--color-white);
+  margin: 0 auto;
+}
+
+.owl-carousel { 
+  position: relative;
+}
+.owl-dot span {
+  background: var(--color-secondary) !important;
+}
