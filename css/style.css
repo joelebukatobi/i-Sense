@@ -1,17 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@200;300;400&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700;800;900&display=swap");
+
 :root {
   --color-white: #ffffff;
-
   --color-primary: #3a407c;
   --color-primary-light: #d8d9e5;
   --color-primary-dark: #ba265d;
   --color-secondary: #fcb500;
   --color-alert: #f13e3e;
-
-  --font-family: Overpass, san-serif: 
-  --font-size: 62.5%;
 }
 
 * {
@@ -35,15 +32,15 @@ Navbar
 ______
 */
 .navbar {
- margin-top: 4em;
- margin-bottom: 4em;
+  margin-top: 4em;
+  margin-bottom: 4em;
 }
-.nav-brand img { 
+.nav-brand img {
   height: 5rem;
   margin-left: 9.8em;
 }
 
-.header { 
+.header {
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -51,37 +48,37 @@ ______
   height: auto;
 }
 
-.header-text { 
+.header-text {
   margin-top: 3em;
 }
-.header-text h1 { 
+.header-text h1 {
   font-size: 6.7em;
   font-family: Poppins, sans-serif;
   font-weight: 300;
 }
 
-.header h1 span  { 
-  color: var(--color-alert)
+.header h1 span {
+  color: var(--color-alert);
 }
 
-.header-text p { 
+.header-text p {
   font-size: 2.1em;
   font-family: Overpass, sans-serif;
   font-weight: 300;
-  margin-top: .8em;
+  margin-top: 0.8em;
 }
 
-.header-text p span { 
+.header-text p span {
   font-weight: 600;
   color: var(--color-primary);
 }
 
-.header img { 
+.header img {
   margin-top: -5em;
   height: 90em;
 }
 
-.header form { 
+.header form {
   /* position: absolute; */
   position: relative;
 }
@@ -106,7 +103,7 @@ ______
   padding: 0;
   margin-left: 1.6rem;
   font-family: Overpass, san-serif;
-  font-weight: 200
+  font-weight: 200;
 }
 
 .header form button {
@@ -145,15 +142,14 @@ ______
 About
 -----
 */
-.about { 
+.about {
   margin-top: 9.8em;
   display: flex;
-  align-items: center; 
+  align-items: center;
   justify-content: space-between;
   padding-left: 9.8em;
   padding-right: 9.8em;
 }
-
 
 .about-image {
   display: flex;
@@ -163,17 +159,17 @@ About
   padding-left: 9.8em;
 }
 
-.about-bg{
+.about-bg {
   position: absolute;
   left: -9.8em;
   height: 72em;
   width: 60em;
-  background-color:  var(--color-primary-light);
+  background-color: var(--color-primary-light);
 }
 
-.about-image img{
+.about-image img {
   position: absolute;
-  height : 50em;
+  height: 50em;
   width: 50em;
 }
 
@@ -182,16 +178,16 @@ About
   margin-right: 9.8em;
 }
 
-.about-text h2 { 
+.about-text h2 {
   font-size: 3.7em;
   font-weight: 600;
   font-family: Poppins, sans-serif;
   color: var(--color-primary);
-  margin-bottom: .4em;
+  margin-bottom: 0.4em;
 }
-.about-text p { 
-  margin-top: .4em;
-  margin-bottom: .4em;
+.about-text p {
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
   font-size: 2.1em;
   font-weight: 300;
   font-family: Overpass, sans-serif;
@@ -199,7 +195,7 @@ About
 }
 
 .about a {
-  margin-top: .4em;
+  margin-top: 0.4em;
 }
 
 .about a svg {
@@ -214,16 +210,15 @@ About
 About
 -----
 */
-.about-2 { 
+.about-2 {
   margin-top: 9.8em;
   margin-bottom: 9.8em;
   display: flex;
-  align-items: center; 
+  align-items: center;
   justify-content: space-between;
   padding-left: 9.8em;
   padding-right: 9.8em;
 }
-
 
 .about-2-image {
   display: flex;
@@ -234,7 +229,7 @@ About
   padding-left: 18.6em;
 }
 
-.about-2-bg{
+.about-2-bg {
   position: absolute;
   background-color: var(--color-primary-light);
   height: 72em;
@@ -242,7 +237,7 @@ About
   right: -9.8em;
 }
 
-.about-2-image img{
+.about-2-image img {
   position: absolute;
   height: 50em;
   width: 50em;
@@ -253,16 +248,16 @@ About
   margin-left: 9.8em;
 }
 
-.about-2-text h2 { 
+.about-2-text h2 {
   font-size: 3.7em;
   font-weight: 600;
   font-family: Poppins, sans-serif;
   color: var(--color-primary);
-  margin-bottom: .4em;
+  margin-bottom: 0.4em;
 }
-.about-2-text p { 
-  margin-top: .4em;
-  margin-bottom: .4em;
+.about-2-text p {
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
   font-size: 2.1em;
   font-weight: 300;
   font-family: Overpass, sans-serif;
@@ -270,7 +265,7 @@ About
 }
 
 .about-2 a {
-  margin-top: .4em;
+  margin-top: 0.4em;
 }
 
 .about-2 a svg {
@@ -312,17 +307,17 @@ Carousel
   z-index: 5;
 }
 
-.carousel-item { 
+.carousel-item {
   height: 64.5em;
 }
 
-.carousel-text { 
+.carousel-text {
   width: 100%;
   margin-bottom: 4.8em;
   text-align: center;
 }
 
-.carousel-text h2 { 
+.carousel-text h2 {
   font-size: 3.7em;
   font-family: Overpass, sans-serif;
   font-weight: 300;
@@ -330,7 +325,7 @@ Carousel
   color: var(--color-white);
 }
 
-.carousel-text p { 
+.carousel-text p {
   font-size: 2.1em;
   font-family: Overpass, sans-serif;
   font-weight: 200;
@@ -339,7 +334,7 @@ Carousel
   margin: 0 auto;
 }
 
-.owl-carousel { 
+.owl-carousel {
   position: relative;
 }
 .owl-dot span {
@@ -355,17 +350,17 @@ Footer
 --------
 */
 
-.footer { 
+.footer {
   position: relative;
   top: -10em;
 }
-.footer-content { 
+.footer-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.footer img { 
+.footer img {
   width: 100%;
 }
 
@@ -376,16 +371,16 @@ Footer
   color: var(--color-primary);
 }
 
-.footer-text h4 { 
+.footer-text h4 {
   font-size: 2.8em;
   font-weight: 300;
 }
 
-.footer-text p { 
+.footer-text p {
   font-size: 2.1em;
   font-weight: 200;
 }
-.footer-social { 
+.footer-social {
   top: 15em;
   z-index: 5;
   padding-right: 9.8em;
@@ -397,40 +392,40 @@ Footer
 }
 
 .footer-social a:not(:last-child) {
-  margin-right: 2em
+  margin-right: 2em;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
-  .navbar { 
+@media (min-width: 320px) and (max-width: 576px) {
+  .navbar {
     background-color: transparent;
     margin: 2.4em 0 0 0;
   }
 
-  .nav-brand img { 
+  .nav-brand img {
     height: 5rem;
     margin-left: 2.4em;
   }
 
-  .header { 
+  .header {
     width: 100vw;
     overflow: hidden;
     padding-left: 2.4em;
     padding-right: 2.4em;
   }
-  
-  .header-text h1 { 
+
+  .header-text h1 {
     margin-top: 2em;
     font-size: 3.7em;
     font-family: Poppins, sans-serif;
     font-weight: 300;
   }
 
-  .header form { 
+  .header form {
     position: relative;
     margin-bottom: 10em;
   }
 
-  .header img { 
+  .header img {
     position: absolute;
     margin-top: 1em;
     left: 10em;
@@ -440,7 +435,7 @@ Footer
     opacity: 0.1;
   }
 
-  .about { 
+  .about {
     flex-direction: column;
     padding-left: 2.4em;
     padding-right: 2.4em;
@@ -448,38 +443,37 @@ Footer
     width: 100vw;
   }
 
-  .about-image { 
+  .about-image {
     height: 48em;
     width: inherit;
     padding-left: 0;
   }
 
-  .about-bg { 
+  .about-bg {
     width: inherit;
     left: 0;
-    height:40em;
-    display : none;
+    height: 40em;
+    display: none;
   }
 
-  .about-image img{
+  .about-image img {
     height: 48em;
-    width:inherit;
+    width: inherit;
     padding: 6.4em 2.4em;
   }
 
-  .about-text{ 
+  .about-text {
     width: inherit;
     margin: 0;
     padding: 2.4em;
   }
 
-  .about-text h2, 
-  .about-text p { 
+  .about-text h2,
+  .about-text p {
     width: 100%;
-
   }
 
-  .about-2 { 
+  .about-2 {
     flex-direction: column-reverse;
     padding-left: 2.4em;
     padding-right: 2.4em;
@@ -487,63 +481,65 @@ Footer
     width: 100vw;
   }
 
-  .about-2-image { 
+  .about-2-image {
     height: 48em;
     width: inherit;
     padding-left: 0;
   }
 
-  .about-2-bg { 
+  .about-2-bg {
     width: inherit;
     left: 0;
-    height:40em;
-    display : none;
+    height: 40em;
+    display: none;
   }
 
-  .about-2-image img{
+  .about-2-image img {
     height: 48em;
-    width:inherit;
+    width: inherit;
     padding: 6.4em 2.4em;
   }
 
-  .about-2-text{ 
+  .about-2-text {
     width: inherit;
     margin: 0;
     padding: 2.4em;
   }
 
-  .about-2-text h2, 
-  .about-2-text p { 
+  .about-2-text h2,
+  .about-2-text p {
     width: 100%;
-
   }
 
-  .carousel-text p { 
-    width: 30%;
+  .carousel {
+    width: 35em;
   }
-  .footer { 
+
+  .carousel-item {
+    height: 70em;
+  }
+
+  .footer {
     top: -2em;
   }
 
-  .footer-content { 
+  .footer-content {
     flex-direction: column;
     align-items: stretch;
     padding-left: 2.4em;
-    
   }
 
-
-  .footer-text{ 
+  .footer-text {
     padding-left: 0em;
     margin-bottom: 1.6em;
   }
-    
-  .footer-text h4 { 
+
+  .footer-text h4 {
     font-size: 2.1em;
     font-weight: 300;
   }
 
-  .footer-text p { 
+  .footer-text p {
     font-size: 1.6em;
     font-weight: 200;
   }
