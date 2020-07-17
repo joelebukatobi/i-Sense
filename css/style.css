@@ -408,9 +408,14 @@ Footer
 
   .header {
     width: 100vw;
+    height: 100vh;
     overflow: hidden;
     padding-left: 2.4em;
     padding-right: 2.4em;
+  }
+
+  .header-text {
+    margin-top: 20em;
   }
 
   .header-text h1 {
@@ -430,16 +435,15 @@ Footer
     margin-top: 1em;
     left: 10em;
     top: 0;
-    height: 80em;
+    height: 100em;
     z-index: -1;
-    opacity: 0.1;
+    opacity: 0.15;
   }
 
   .about {
     flex-direction: column;
     padding-left: 2.4em;
     padding-right: 2.4em;
-    margin-top: 4.8em;
     width: 100vw;
   }
 
