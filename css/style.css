@@ -6,6 +6,7 @@
   --color-white: #ffffff;
   --color-primary: #3a407c;
   --color-primary-light: #d8d9e5;
+  --color-primary-light-2: #505474;
   --color-primary-dark: #ba265d;
   --color-secondary: #fcb500;
   --color-alert: #f13e3e;
@@ -298,7 +299,7 @@ Carousel
   justify-content: center;
   padding-right: 9.8em;
   padding-left: 9.8em;
-  background-color: var(--color-primary);
+  background-color: var(--color-primary-light-2);
   position: relative;
   width: 100%;
   height: 120em;
@@ -308,7 +309,6 @@ Carousel
 .bg-image {
   position: absolute;
   top: 0;
-  /* z-index: -1; */
 }
 
 .carousel {
@@ -349,10 +349,41 @@ Carousel
 .owl-carousel {
   position: relative;
 }
+
+.owl-dot {
+  margin-top: 4.8rem;
+}
 .owl-dot span {
   background: var(--color-secondary) !important;
 }
 
+.owl-prev,
+.owl-next {
+  color: #ffffff !important;
+  font-size: 5rem !important;
+  position: absolute;
+  top: 40%;
+  z-index: 10;
+}
+
+.owl-prev:link,
+.owl-prev:visited,
+.owl-prev:hover,
+.owl-prev:focus,
+.owl-next:link,
+.owl-next:visited,
+.owl-next:hover,
+.owl-next:focus {
+  outline: none;
+  background: transparent !important;
+}
+
+.owl-prev {
+  left: -10rem;
+}
+.owl-next {
+  right: -10rem;
+}
 /* 
 ------------------------------------------------------------------------
 */
@@ -453,29 +484,30 @@ Banner
 Footer
 --------
 */
-
 .footer {
-  top: 20em;
-  position: relative;
-  height: auto;
-}
-.footer-content {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-bottom: 2.4em;
+  flex-direction: column;
+  position: relative;
 }
 
-.footer-img {
-  position: absolute;
-  bottom: 0;
-  z-index: -5;
-}
-
-.footer-img img {
+.footer-ing {
   width: 100%;
 }
-
+.footer-img img {
+  position: absolute;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.footer-content {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 13rem;
+  z-index: 2;
+  width: 100%;
+}
 .footer-text {
   padding-left: 9.8em;
   font-family: Overpass, san-serif;
@@ -483,16 +515,15 @@ Footer
 }
 
 .footer-text h4 {
-  font-size: 2.8em;
+  font-size: 2.1em;
   font-weight: 300;
 }
 
 .footer-text p {
-  font-size: 2.1em;
+  font-size: 1.6em;
   font-weight: 200;
 }
 .footer-social {
-  /* border: 2px solid red; */
   padding-right: 9.8em;
 }
 
@@ -505,6 +536,8 @@ Footer
 .footer-social a:not(:last-child) {
   margin-right: 2em;
 }
+
+/* Mobile Responsiveness */
 
 @media (min-width: 320px) and (max-width: 576px) {
   .navbar {
@@ -626,6 +659,10 @@ Footer
     width: 100%;
   }
 
+  .container {
+    overflow-x: hiddenp;
+  }
+
   .carousel {
     width: 35em;
   }
@@ -665,7 +702,7 @@ Footer
 
   .footer-content {
     padding-left: 2.4em;
-    padding-bottom: 1.6em;
+    top: 5.5rem;
   }
 
   .footer-img img {
@@ -677,7 +714,7 @@ Footer
   }
 
   .footer-text h4 {
-    font-size: 1.2em;
+    font-size: 1.4em;
     font-weight: 300;
   }
 
