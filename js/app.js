@@ -5,6 +5,7 @@ $(document).ready(function () {
     dotsEach: true,
     nav: true,
     autoplay: true,
+    autoplayTimeout: 8000,
     autoplayHoverPause: true,
     responsive: {
       0: {
@@ -18,4 +19,19 @@ $(document).ready(function () {
       },
     },
   });
+
+  AOS.init({
+    duration: 1200,
+  });
+
+  let screen = window.matchMedia("(max-width: 576px)");
+  if (screen.matches) {
+    $(".header-img").attr("data-aos", "fade-up");
+    $(".about-img").attr("data-aos", "fade-up");
+    $(".about-2-img").attr("data-aos", "fade-up");
+  } else {
+    $(".header-img").attr("data-aos", "fade-left");
+    $(".about-img").attr("data-aos", "fade-down");
+    $(".about-2-img").attr("data-aos", "fade-down");
+  }
 });
