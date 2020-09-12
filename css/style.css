@@ -28,6 +28,10 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  /* overflow-x: hidden; */
+}
+
 a:hover,
 a:link,
 a:visited,
@@ -48,6 +52,7 @@ ______
 .navbar {
   margin-top: 4em;
   margin-bottom: 4em;
+  background-color: transparent;
 }
 .nav-brand img {
   height: 5rem;
@@ -62,11 +67,46 @@ ______
   height: auto;
 }
 
+.header .header_animate:nth-of-type(4) {
+  top: 15rem;
+  right: 0;
+  height: 50rem;
+  width: 50rem;
+  z-index: -1;
+}
+
+.header .header_animate:nth-of-type(1) {
+  top: 5rem;
+  left: 15rem;
+  height: 20rem;
+  width: 20rem;
+}
+
+.header .header_animate:nth-of-type(3) {
+  top: -10rem;
+  right: 0rem;
+  height: 45rem;
+  width: 30rem;
+  z-index: -1;
+}
+
+.header .header_animate:nth-of-type(2) {
+  height: 35rem;
+  width: 35rem;
+  left: 0;
+  top: 10rem;
+}
+
+.header .header_animate {
+  position: absolute;
+}
+
 .header-text {
-  margin-top: 3em;
+  margin-top: 10em;
+  width: 60rem;
 }
 .header-text h1 {
-  font-size: 6.7em;
+  font-size: 5em;
   font-family: Poppins, sans-serif;
   font-weight: 300;
 }
@@ -190,8 +230,7 @@ About
 }
 
 .about-text {
-  right: 0;
-  margin-right: 9.8em;
+  padding-right: 9.8em;
 }
 
 .about-text h2 {
@@ -212,6 +251,7 @@ About
 
 .about a {
   margin-top: 0.4em;
+  float: right;
 }
 
 .about a svg {
@@ -234,6 +274,7 @@ About
   justify-content: space-between;
   padding-left: 9.8em;
   padding-right: 9.8em;
+  overflow-x: hidden;
 }
 
 .about-2-image {
@@ -559,21 +600,29 @@ Footer
     padding-right: 2.4em;
   }
 
+  .header header-animate {
+    display: none;
+  }
   .header-text {
     position: absolute;
-    margin-top: 20em;
+    margin-top: 10em;
     padding-left: 2.4em;
     padding-right: 2.4em;
     left: 0;
     right: 0;
     z-index: 3;
+    width: 100%;
   }
 
   .header-text h1 {
     margin-top: 2em;
-    font-size: 3.7em;
+    font-size: 2.8em;
     font-family: Poppins, sans-serif;
     font-weight: 300;
+  }
+
+  .header-text p {
+    font-size: 1.6rem;
   }
 
   .header img {
@@ -581,7 +630,7 @@ Footer
     margin-top: 1em;
     left: 10em;
     top: 0;
-    height: 100em;
+    height: 70em;
     z-index: -1;
     opacity: 0.15;
   }
@@ -692,6 +741,8 @@ Footer
 
   .banner h2 {
     font-size: 2.8em;
+
+    text-align: center;
   }
 
   .banner p {
